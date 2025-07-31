@@ -1,64 +1,103 @@
+import { useState } from 'react'
 import './App.css'
+import foto from './assets/gabrielaFoto.jpg'
+import reactLogo from './assets/react.png'
+import excel from './assets/excel.png'
+import css from './assets/css.png'
+import html from './assets/html.png'
+import python from './assets/python.png'
+import js from './assets/js.png'
+import sql from './assets/sql.png'
+import tailwind from './assets/tailwind.png'
+import br from './assets/brazil.png'
+import us from './assets/us.png'
+import aws from './assets/aws.jpg'
 
+
+let textos = {
+  pt: {
+    presentation: "Atualmente curso o sexto semestre de Análise e Desenvolvimento de Sistemas. Tenho interesse em Análise de Dados. Minhas habilidades em Excel são intermediárias; Entendo de gráficos, tabelas dinâmicas e funções. Além disso, estou fazendo uma formação em análise de dados e estatística.",
+    project: "Meus projetos",
+    code: "Site Pessoal",
+    game: "Color Code Game"
+  },
+  en: {
+    presentation: "I am currently in the sixth semester of Systems Analysis and Development. I am interested in Data Analysis. My Excel skills are intermediate; I am familiar with charts, pivot tables, and functions. In addition, I am pursuing training in data analysis and statistics.",
+    project: "My projects",
+    code: "Personal Website",
+    game: "Color Code Game"
+  }
+}
 function App() {
+  const [language,setLanguage] = useState('pt')
+  const t = textos[language]
   return (
-    <div className="bg-red-500 h-screen w-screen flex flex-row font-[Open Sans]">
+    <div className="bg-red-500 h-screen w-screen flex flex-row font-[Poppins]">
       <div className='bg-black h-screen w-1/2 flex flex-col justify-between'>
         <div>
 
           <div className='flex flew-row gap-3 p-3'>
-            <div className='h-9 w-9'><button><img src="src\assets\brazil.png" alt="" /></button></div>
-            <div className='h-9 w-9'><button><img src="src\assets\us.png" alt="" /></button></div>
+            <div onClick={() => setLanguage('pt')} className='h-9 w-9 cursor-pointer'><button><img className="cursor-pointer" src={br} alt="" /></button></div>
+            <div onClick={() => setLanguage('en')} className='h-9 w-9 cursor-pointer'><button><img className="cursor-pointer" src={us} alt="" /></button></div>
           </div>
-          <div className='flex itens-center justify-center'>
-            <div className='w-[160px] h-[160px] py-[20px]'><img src='src\assets\gabrielaFoto.jpg' className='rounded-full border-[4px] border-[#d9d9d9] object-cover '></img></div>
-
+          <div className='flex itens-center justify-center '>
+            <div className='w-[160px] h-[160px] py-[20px] cursor-pointer' onClick={() => window.open('https://www.linkedin.com/in/gabrieladiasdutra/', '_blank')}><img src={foto} className='rounded-full border-[4px] border-[#d9d9d9] object-cover '></img></div>
           </div>
 
           <div className=' text-[#d9d9d9]'>
-            <h1 className='text-[32px] font-semibold py-[20px] flex items-center justify-center'>Gabriela Dutra</h1>
-            <p className='text-[16px] p-3'>Atualmente curso o sexto semestre de Análise e Desenvolvimento de Sistemas. Tenho interesse em Análise de Dados. Minhas habilidades em Excel são intermediárias; Entendo de gráficos, tabelas dinâmicas e funções. Além disso, estou fazendo uma formação em análise de dados e estatística.</p>
+            <h1 className='text-[32px] font-semibold py-[20px] flex items-center justify-center cursor-pointer' onClick={() => window.open('https://www.linkedin.com/in/gabrieladiasdutra/', '_blank')} >Gabriela Dutra</h1>
+            <p className='text-[18px] p-3 text-[Open Sans]'>{t.presentation}</p>
           </div>
 
           <div className='flex flex-row gap-5 m-[50px] justify-center flex-wrap'>
 
             <div className='h-10 w-10'>
-              <img src='src\assets\logo_dark.png'></img>
+              <img src={reactLogo}></img>
             </div>
             <div className='h-10 w-10'>
-              <img src='src\assets\js.png'></img>
+              <img src={js}></img>
             </div>
             <div className='h-14s w-14'>
-              <img src='src\assets\tailwind.png'></img>
+              <img src={tailwind}></img>
             </div>
             <div className='h-10 w-10'>
-              <img src='src\assets\html.png'></img>
+              <img src={html}></img>
             </div>
             <div className='h-10 w-10'>
-              <img src='src\assets\css.png'></img>
+              <img src={css}></img>
             </div>
             <div className='h-10 w-10'>
-              <img src='src\assets\python.png'></img>
+              <img src={python}></img>
             </div>
             <div className='h-10 w-10'>
-              <img src='src\assets\excel.png'></img>
+              <img src={excel}></img>
             </div>
             <div className='h-10 w-10'>
-              <img src='src\assets\sql.png'></img>
+              <img src={sql}></img>
+            </div>
+            <div className='h-10 w-10'>
+              <img src={aws}></img>
             </div>
 
           </div>
         </div>
         <footer className='mb-3 h-[60px] bottom-0 w-full flex items-center justify-center m-l-[100px]'>
-          <div className='h-[50px] w-[100px] bg-[#04AA6D] rounded-[12px] text-white font-semibold flex justify-center'>
-            <button><a href="https://github.com/gabrieladutra">Github</a></button>
+          <div 
+            onClick={() => window.open('https://github.com/gabrieladutra', '_blank')} 
+            className='h-[50px] w-[100px] bg-[#04AA6D] rounded-[12px] text-white font-semibold flex justify-center cursor-pointer items-center'
+          >
+            Github
           </div>
         </footer>
       </div>
       <div className='bg-gradient-to-tr from-[#ef6da0] to-[#ee8e6b] h-screen w-1/2 flex flex-column items-center justify-center'>
         <div className='mb-[250px] py-[0px] px-[20px] ptext-[#333]'>
-          <h1 className=' font-semibold text-[32px] '>Meus Projetos</h1>
-          <p>Link</p>
+          <h1 className=' font-semibold text-[32px] mb-[30px] '>{t.project}</h1>
+          <ul className='text-[18px] cursor-pointer flex  flex-col gap-4'>
+            <li onClick={() => window.open('https://github.com/gabrieladutra/reactPersonalPage', '_blank')}>{t.code}</li>
+            <li onClick={() => window.open('https://github.com/gabrieladutra/reactPersonalPage', '_blank')}>{t.game}</li>
+          </ul>
+          
         </div>
       </div>
     </div>
