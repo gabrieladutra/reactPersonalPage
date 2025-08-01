@@ -95,7 +95,7 @@ function App() {
           <h1 className=' font-semibold text-[32px] mb-[30px] '>{t.project}</h1>
           <ul className='text-[18px] cursor-pointer flex  flex-col gap-4'>
             <li onClick={() => window.open('https://github.com/gabrieladutra/reactPersonalPage', '_blank')}>{t.code}</li>
-            <li onClick={() => window.open('https://github.com/gabrieladutra/reactPersonalPage', '_blank')}>{t.game}</li>
+            <li onClick={() => window.open('https://colorcodes.gabrieladutra.com', '_blank')}>{t.game}</li>
           </ul>
           
         </div>
