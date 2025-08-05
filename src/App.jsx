@@ -29,11 +29,16 @@ let textos = {
   }
 }
 function App() {
-  const [language,setLanguage] = useState('pt')
+  const [language, setLanguage] = useState('pt')
   const t = textos[language]
+
+  var ratio = window.devicePixelRatio || 1;
+  var w = screen.width * ratio;
+  var h = screen.height * ratio;
+
   return (
-    <div className="bg-red-500 h-screen w-screen flex flex-row font-[Poppins]">
-      <div className='bg-black h-screen w-1/2 flex flex-col justify-between'>
+    <div className="bg-red-500 h-screen w-screen flex flex-col md:flex-row font-[Poppins]">
+      <div className='min-h-full bg-black h-screen w-full md:w-1/2 flex flex-col justify-between'>
         <div>
 
           <div className='flex flew-row gap-3 p-3'>
@@ -45,59 +50,62 @@ function App() {
           </div>
 
           <div className=' text-[#d9d9d9]'>
-            <h1 className='text-[32px] font-semibold py-[20px] flex items-center justify-center cursor-pointer' onClick={() => window.open('https://www.linkedin.com/in/gabrieladiasdutra/', '_blank')} >Gabriela Dutra</h1>
-            <p className='text-[18px] p-3 text-[Open Sans]'>{t.presentation}</p>
+            <h1 className='text-[32px] font-semibold py-[25px] flex items-center justify-center cursor-pointer' onClick={() => window.open('https://www.linkedin.com/in/gabrieladiasdutra/', '_blank')} >Gabriela Dutra</h1>
+            <p className='text-sm celularzao:text-base md:text-lg lg:text-xl p-3 text-[Open Sans]'>
+              {/* {w}x{h} <br /> */}
+              {t.presentation}
+            </p>
           </div>
 
-          <div className='flex flex-row gap-5 m-[50px] justify-center flex-wrap'>
+          <div className='flex flex-row gap-5 mt-1 celularzao:mt-2 md:mt-4 mb-4 justify-center flex-wrap'>
 
-            <div className='h-10 w-10'>
+            <div className='h-9 w-9 md:h-10 md:w-10'>
               <img src={reactLogo}></img>
             </div>
-            <div className='h-10 w-10'>
+            <div className='h-9 w-9 md:h-10 md:w-10'>
               <img src={js}></img>
             </div>
             <div className='h-14s w-14'>
               <img src={tailwind}></img>
             </div>
-            <div className='h-10 w-10'>
+            <div className='h-9 w-9 md:h-10 md:w-10'>
               <img src={html}></img>
             </div>
-            <div className='h-10 w-10'>
+            <div className='h-9 w-9 md:h-10 md:w-10'>
               <img src={css}></img>
             </div>
-            <div className='h-10 w-10'>
+            <div className='h-9 w-9 md:h-10 md:w-10'>
               <img src={python}></img>
             </div>
-            <div className='h-10 w-10'>
+            <div className='h-9 w-9 md:h-10 md:w-10'>
               <img src={excel}></img>
             </div>
-            <div className='h-10 w-10'>
+            <div className='h-9 w-9 md:h-10 md:w-10'>
               <img src={sql}></img>
             </div>
-            <div className='h-10 w-10'>
+            <div className='h-9 w-9 md:h-10 md:w-10'>
               <img src={aws}></img>
             </div>
 
           </div>
         </div>
-        <footer className='mb-3 h-[60px] bottom-0 w-full flex items-center justify-center m-l-[100px]'>
-          <div 
-            onClick={() => window.open('https://github.com/gabrieladutra', '_blank')} 
-            className='h-[50px] w-[100px] bg-[#04AA6D] rounded-[12px] text-white font-semibold flex justify-center cursor-pointer items-center'
+        <footer className='mb-16 md:mb-3 h-[60px] bottom-0 w-full flex items-center justify-center m-l-[100px]'>
+          <div
+            onClick={() => window.open('https://github.com/gabrieladutra', '_blank')}
+            className='h-[50px] w-[100px] bg-green-600 hover:bg-green-800 rounded-[12px] text-white font-semibold flex justify-center cursor-pointer items-center'
           >
             Github
           </div>
         </footer>
       </div>
-      <div className='bg-gradient-to-tr from-[#ef6da0] to-[#ee8e6b] h-screen w-1/2 flex flex-column items-center justify-center'>
-        <div className='mb-[250px] py-[0px] px-[20px] ptext-[#333]'>
+      <div className='min-h-full bg-gradient-to-tr from-[#ef6da0] to-[#ee8e6b] h-screen w-full md:w-1/2 flex flex-col items-center justify-start md:justify-center lg:justify-center'>
+        <div className='mb-[250px] py-[30px] px-[20px] ptext-[#333]'>
           <h1 className=' font-semibold text-[32px] mb-[30px] '>{t.project}</h1>
           <ul className='text-[18px] cursor-pointer flex  flex-col gap-4'>
             <li onClick={() => window.open('https://github.com/gabrieladutra/reactPersonalPage', '_blank')}>{t.code}</li>
             <li onClick={() => window.open('https://colorcodes.gabrieladutra.com', '_blank')}>{t.game}</li>
           </ul>
-          
+
         </div>
       </div>
     </div>
