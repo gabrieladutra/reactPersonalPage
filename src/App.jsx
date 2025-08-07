@@ -19,13 +19,16 @@ let textos = {
     presentation: "Atualmente curso o sexto semestre de Análise e Desenvolvimento de Sistemas. Tenho interesse em Análise de Dados. Minhas habilidades em Excel são intermediárias; Entendo de gráficos, tabelas dinâmicas e funções. Além disso, estou fazendo uma formação em análise de dados e estatística.",
     project: "Meus projetos",
     code: "Site Pessoal",
-    game: "Color Code Game"
+    game: "Color Code Game",
+    cat: "Cat Revealer"
   },
   en: {
     presentation: "I am currently in the sixth semester of Systems Analysis and Development. I am interested in Data Analysis. My Excel skills are intermediate; I am familiar with charts, pivot tables, and functions. In addition, I am pursuing training in data analysis and statistics.",
     project: "My projects",
     code: "Personal Website",
-    game: "Color Code Game"
+    game: "Color Code Game",
+    cat: "Cat Revealer"
+    
   }
 }
 function App() {
@@ -104,6 +107,7 @@ function App() {
           <ul className='text-[18px] cursor-pointer flex  flex-col gap-4'>
             <li onClick={() => window.open('https://github.com/gabrieladutra/reactPersonalPage', '_blank')}>{t.code}</li>
             <li onClick={() => window.open('https://colorcodes.gabrieladutra.com', '_blank')}>{t.game}</li>
+            <li onClick={() => window.open('https://catrevealer.gabrieladutra.com', '_blank')}>{t.cat}</li>
           </ul>
 
         </div>
