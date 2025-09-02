@@ -16,7 +16,7 @@ import aws from './assets/aws.jpg'
 
 let textos = {
   pt: {
-    presentation: "Atualmente curso o sexto semestre de Análise e Desenvolvimento de Sistemas. Tenho interesse em Análise de Dados. Minhas habilidades em Excel são intermediárias; Entendo de gráficos, tabelas dinâmicas e funções. Além disso, estou fazendo uma formação em análise de dados e estatística.",
+    presentation: " Cursei Análise e Desenvolvimento de Sistemas. Tenho interesse em Análise de Dados. Minhas habilidades em Excel são intermediárias; Entendo de gráficos, tabelas dinâmicas e funções. Além disso, estou fazendo uma formação em análise de dados e estatística.",
     project: "Meus projetos",
     code: "Site Pessoal",
     game: "Color Code Game",
