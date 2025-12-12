@@ -20,14 +20,16 @@ let textos = {
     project: "Meus projetos",
     code: "Site Pessoal",
     game: "Color Code Game",
-    cat: "Cat Revealer"
+    cat: "Cat Revealer",
+    menu: "Menu Automatizado do SESC"
   },
   en: {
     presentation: "I am currently in the sixth semester of Systems Analysis and Development. I am interested in Data Analysis. My Excel skills are intermediate; I am familiar with charts, pivot tables, and functions. In addition, I am pursuing training in data analysis and statistics.",
     project: "My projects",
     code: "Personal Website",
     game: "Color Code Game",
-    cat: "Cat Revealer"
+    cat: "Cat Revealer",
+    menu: "Automated SESC Lunch Menu"
     
   }
 }
@@ -108,6 +110,7 @@ function App() {
             <li onClick={() => window.open('https://github.com/gabrieladutra/reactPersonalPage', '_blank')}>{t.code}</li>
             <li onClick={() => window.open('https://colorcodes.gabrieladutra.com', '_blank')}>{t.game}</li>
             <li onClick={() => window.open('https://catrevealer.gabrieladutra.com', '_blank')}>{t.cat}</li>
+            <li onClick={() => window.open('https://menu.gabrieladutra.com', '_blank')}>{t.menu}</li>
           </ul>
 
         </div>
