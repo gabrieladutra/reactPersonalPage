@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-import foto from './assets/gabrielaFoto.jpg'
+import foto from './assets/gabriela.png'
 import reactLogo from './assets/react.png'
 import excel from './assets/excel.png'
 import css from './assets/css.png'
@@ -16,7 +16,7 @@ import aws from './assets/aws.jpg'
 
 let textos = {
   pt: {
-    presentation: " Cursei Análise e Desenvolvimento de Sistemas. Tenho interesse em Análise de Dados. Minhas habilidades em Excel são intermediárias; Entendo de gráficos, tabelas dinâmicas e funções. Além disso, estou fazendo uma formação em análise de dados e estatística.",
+    presentation: " Formada em Análise e Desenvolvimento de Sistemas. Tenho interesse em Análise de Dados. Minhas habilidades em Excel são intermediárias; Entendo de gráficos, tabelas dinâmicas e funções. Além disso, estou fazendo uma formação em análise de dados e estatística.",
     project: "Meus projetos",
     code: "Site Pessoal",
     game: "Color Code Game",
@@ -24,7 +24,7 @@ let textos = {
     menu: "Menu Automatizado do SESC"
   },
   en: {
-    presentation: "I am currently in the sixth semester of Systems Analysis and Development. I am interested in Data Analysis. My Excel skills are intermediate; I am familiar with charts, pivot tables, and functions. In addition, I am pursuing training in data analysis and statistics.",
+    presentation: "I graduated with a degree in Systems Analysis and Development. I am interested in Data Analysis. My Excel skills are strong; I understand charts, pivot tables, and functions. Additionally, I am pursuing a degree in data analysis and statistics.",
     project: "My projects",
     code: "Personal Website",
     game: "Color Code Game",
