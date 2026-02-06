@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Nome do bucket
-BUCKET='menu.gabrieladutra.com'
+BUCKET='www.gabrieladutra.com'
 
 # 1) GERAR O BUILD
 echo "Gerando build..."
