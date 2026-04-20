@@ -94,7 +94,7 @@ function App() {
             >
               Gabriela Dutra
             </h1>
-            <p className="text-sm celularzao:text-base md:text-lg lg:text-xl p-3 text-[Open Sans]">
+            <p className="text-sm celularzao:text-base md:text-lg lg:text-xl flex text-justify m-5 p-3 text-[Open Sans]">
               {/* {w}x{h} <br /> */}
               {t.presentation}
             </p>
