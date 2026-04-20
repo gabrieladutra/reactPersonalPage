@@ -12,6 +12,7 @@ import tailwind from './assets/tailwind.png'
 import br from './assets/brazil.png'
 import us from './assets/us.png'
 import aws from './assets/aws.jpg'
+import github from './assets/github.png'
 
 let textos = {
   pt: {
@@ -108,11 +109,12 @@ function App() {
           </div>
         </div>
         <footer className='mt-auto mb-6 flex h-[60px] w-full items-center justify-center md:mb-3'>
-          <div
+          <button
             onClick={() => window.open('https://github.com/gabrieladutra', '_blank')}
-            className='flex h-[50px] w-[100px] cursor-pointer items-center justify-center rounded-[12px] bg-green-800 font-semibold text-white hover:bg-green-700'>
+            className='flex h-[50px] w-[140px] items-center justify-center gap-2 rounded-[12px] bg-green-800 font-semibold text-white transition hover:bg-green-700'>
             Github
-          </div>
+            <img src={github} className='h-5 w-5' />
+          </button>
         </footer>
       </div>
       <div className='flex h-screen min-h-full w-full flex-col items-center justify-start bg-gradient-to-tr from-[#ef6da0] to-[#ee8e6b] md:w-1/2 md:justify-center lg:justify-center'>
