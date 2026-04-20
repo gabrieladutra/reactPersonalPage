@@ -108,10 +108,10 @@ function App() {
             </div>
           </div>
         </div>
-        <footer className='mt-auto mb-6 flex h-[60px] w-full items-center justify-center md:mb-3'>
+        <footer className='mt-auto mb-6 flex h-[60px] w-full items-center justify-center'>
           <button
             onClick={() => window.open('https://github.com/gabrieladutra', '_blank')}
-            className='flex h-[50px] w-[140px] items-center justify-center gap-2 rounded-[12px] bg-green-800 font-semibold text-white transition hover:bg-green-700'>
+            className='mt-2 flex h-8 w-32 items-center justify-center gap-2 rounded-[12px] bg-green-800 font-medium text-white transition hover:bg-green-700 sm:text-sm md:h-12 md:text-base'>
             Github
             <img src={github} className='h-5 w-5' />
           </button>
